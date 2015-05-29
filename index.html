@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"	media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"	media="screen" />
+	
+	<script src="js/angular/angular.js"></script>
+
+	<script src="js/mainController.js"></script>
+	
+</head>
+
+<body  ng-controller="MainCtrl">
+	<div class="container-fluid" ng-repeat="a in list">
+	
+	<div class="col-sm-12">
+		<div class="col-sm-8 lable">
+		<lable>around</lable>
+		</div>
+	</div>
+	</br></br>
+	<div class="col-sm-12">
+		<div class="col-sm-8 lable">
+		<lable>abc</lable>
+		</div>
+	</div>
+	</br></br>
+	<div class="col-sm-12"> 
+		<div class="col-sm-12">
+			<div ng-repeat="btn in list">
+				<div class="col-sm-4 radio pull-right">
+					<input type="radio" value="btn"><span>{{btn}}</span>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</div>	
+	</div>
+	
+	</br></br>
+	<div class="col-sm-12">
+		<div class="col-sm-2 btn">
+		<input type="button" value="Save" ng-click="">
+		</div>
+	</div>
+
+	</div>
+</body>
+</html> 
