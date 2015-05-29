@@ -3,48 +3,22 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"	media="screen" />
+	<link rel='stylesheet prefetch' href='css/font-awesome.min.css' />
+	<link rel="stylesheet" href="css/colorpicker.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"	media="screen" />
 	
 	<script src="js/angular/angular.js"></script>
-
+	<script src="js/angular/angular-touch.js"></script>
+	<script src="js/angular/angular-animate.js"></script>
+	<script src='js/angular/textAngular-sanitize.min.js'></script>
+ 	<script src='js/angular/textAngular.js'></script>
+  	<script src="js/angular/bootstrap-colorpicker-module.js"></script>
+	
 	<script src="js/mainController.js"></script>
 	
 </head>
 
 <body  ng-controller="MainCtrl">
-	<div class="container-fluid" ng-repeat="a in list">
-	
-	<div class="col-sm-12">
-		<div class="col-sm-8 lable">
-		<lable>around</lable>
-		</div>
-	</div>
-	</br></br>
-	<div class="col-sm-12">
-		<div class="col-sm-8 lable">
-		<lable>abc</lable>
-		</div>
-	</div>
-	</br></br>
-	<div class="col-sm-12"> 
-		<div class="col-sm-12">
-			<div ng-repeat="btn in list">
-				<div class="col-sm-4 radio pull-right">
-					<input type="radio" value="btn"><span>{{btn}}</span>
-				</div>
-				
-				<div class="clearfix"></div>
-			</div>
-		</div>	
-	</div>
-	
-	</br></br>
-	<div class="col-sm-12">
-		<div class="col-sm-2 btn">
-		<input type="button" value="Save" ng-click="">
-		</div>
-	</div>
-
-	</div>
+	<div style="width:800px; margin:0 auto;" text-angular="text-angular" name="htmlcontent" ng-model="htmlcontent" ta-disabled='disabled'></div>
 </body>
 </html> 
